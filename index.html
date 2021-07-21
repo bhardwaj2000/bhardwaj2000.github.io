@@ -19,7 +19,7 @@
   <a class="active" href="index.html">Home</a>
   <a href="contact.html">Contact</a>
   <a href="resume.html">About</a>
-  <p id="demo"></p>
+
 </div>
     <img src="images/software-engineer-portfolio-1200x798.jpg" width="75%" alt="banner">
     <h1>Manish Kumar's portal</h1>
@@ -33,10 +33,12 @@
     <h2><a href="contact.html">contact</a></h2>
 
     <p>Email: <a href="mailto:1710manish2000@gmail.com">1710manish2000@gmail.com</a></p>
-    <script>
-const d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>  
+  <p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
   </body>
 
   <footer>
